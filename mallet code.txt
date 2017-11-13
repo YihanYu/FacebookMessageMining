@@ -1,0 +1,3 @@
+bin\mallet import-dir --input sample-data\web\2013 --output yihan.mallet --keep-sequence --remove-stopwords --extra-stopwords 2.txt
+
+bin\mallet train-topics --input yihan.mallet  --num-topics 10 --output-state yihan-topic-state.gz --output-topic-keys yihan-keys.txt --output-doc-topics yihan-topics.txt
